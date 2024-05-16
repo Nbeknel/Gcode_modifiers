@@ -22,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Gcode_fuzzy_skin.py" />
+    <Content Include="Modifier_scripts\Gcode_fuzzy_skin.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modifier_scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modifier_scripts\Gcode_remove_lines.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
