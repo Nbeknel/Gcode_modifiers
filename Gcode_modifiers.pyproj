@@ -22,12 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Gcode_examples\3dbenchy_0.2mm_PLA_MK3S_1h26m.gcode" />
-    <Content Include="Gcode_examples\Voron_Design_Cube_v8_0.2mm_PLA_MK3S_1h13m.gcode" />
+    <Content Include="Gcode_examples\3dbenchy_0.2mm_PLA_MK3S_Front_halve_removed.gcode" />
+    <Content Include="Gcode_examples\3dbenchy_0.2mm_PLA_MK3S_Front_halve_fuzzy.gcode" />
+    <Content Include="Gcode_examples\Voron_Design_Cube_v8_0.2mm_PLA_MK3S_Front_halve_removed.gcode" />
+    <Content Include="Gcode_examples\Voron_Design_Cube_v8_0.2mm_PLA_MK3S_Front_halve_fuzzy.gcode" />
     <Content Include="Modifier_scripts\Gcode_fuzzy_skin.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modifier_examples\Fuzzy skin\" />
+    <Folder Include="Modifier_examples\Remove lines\" />
     <Folder Include="Modifier_scripts\" />
     <Folder Include="Modifier_examples\" />
     <Folder Include="Modifier_templates\" />
@@ -35,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modifier_examples\Fuzzy skin\Front_halve_fuzzy.py" />
+    <Compile Include="Modifier_examples\Remove lines\Front_halve_removed.py" />
     <Compile Include="Modifier_scripts\Gcode_remove_lines.py" />
     <Compile Include="Modifier_templates\Fuzzy_skin_modifier_template.py" />
     <Compile Include="Modifier_templates\Remove_lines_modifier_example.py" />
