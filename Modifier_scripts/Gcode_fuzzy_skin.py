@@ -67,7 +67,7 @@ class Line_Analiser():
         self.retracted = False
         self.gcode_commands = []
         self.object_id = ""
-        self.seed = random.random()
+        self.seed = 0
         self.parity = 0
 
     def analyse_gcode_line(self, line: str):
@@ -107,7 +107,7 @@ class Line_Analiser():
         if match:
             self.z_height = float(match.group(1))
             self.set_z()
-            self.seed = random.random()
+            self.seed += 1
             self.parity = layer_parity(self.z_height)
 
         match = re.search(r"^;HEIGHT:(\d*(\.\d*)?)$", line)

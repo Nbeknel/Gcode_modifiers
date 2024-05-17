@@ -22,6 +22,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Gcode_examples\3dbenchy_0.2mm_PLA_MK3S_1h26m.gcode" />
+    <Content Include="Gcode_examples\Voron_Design_Cube_v8_0.2mm_PLA_MK3S_1h13m.gcode" />
     <Content Include="Modifier_scripts\Gcode_fuzzy_skin.py" />
   </ItemGroup>
   <ItemGroup>
@@ -29,6 +31,7 @@
     <Folder Include="Modifier_scripts\" />
     <Folder Include="Modifier_examples\" />
     <Folder Include="Modifier_templates\" />
+    <Folder Include="Gcode_examples\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modifier_examples\Fuzzy skin\Front_halve_fuzzy.py" />
